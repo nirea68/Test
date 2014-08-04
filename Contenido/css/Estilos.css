@@ -1,0 +1,311 @@
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body, html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 12px;
+    line-height: 22px;
+    font-family: arial, sans-serif;
+    color: #828282;
+    background: url(../imagenes/body.png) repeat 0 0;
+}
+
+a {
+    color: #ff9031;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a.dot {
+        background: url(../imagenes/dot.png) no-repeat 0 5px;
+        text-decoration: underline;
+        padding-left: 7px;
+    }
+
+        a.dot:hover {
+            text-decoration: none;
+        }
+
+    a img {
+        border: 0;
+    }
+
+article, aside, details, footer, header, menu, nav, section {
+    display: block;
+}
+
+input, textarea, select {
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.limpiar {
+    display: block;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -4000px;
+    clear: both;
+}
+
+
+
+.shell {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    background: url(../imagenes/header-bg.png) repeat-x 0 0;
+    height: 520px;
+}
+
+    header .shell {
+        position: relative;
+        height: 100%;
+    }
+
+#logo {
+    width: 300px;
+    font-size: 0;
+    line-height: 0;
+    float: left;
+}
+
+    #logo a {
+        height: 130px;
+        background: url(../imagenes/logo.png) no-repeat 0 0;
+        text-indent: -4000px;
+        display: block;
+    }
+
+
+
+#navigation {
+    background: url(../imagenes/fondoMenu.png) no-repeat 0 0;
+    width: 984px;
+    height: 90px;
+    padding-top: 9px;
+    padding-left: 20px;
+    position: absolute;
+    top: 125px;
+    left: -10px;
+    z-index: 5;
+}
+
+    #navigation ul {
+        list-style: none;
+        list-style-position: outside;
+    }
+
+        #navigation ul li {
+            float: left;
+            font-size: 18px;
+            font-family: 'museo', arial, helvetica, serif;
+            background: url(../imagenes/nav-border.png) no-repeat right 0;
+            line-height: 48px;
+            padding: 0 29px;
+        }
+
+            #navigation ul li.last {
+                background: transparent;
+            }
+
+            #navigation ul li a {
+                color: #fff;
+                text-shadow: rgba(0,0,0,0.6) 0px 1px 0px;
+            }
+
+                #navigation ul li a:hover {
+                    text-decoration: none;
+                    color: #f6c387;
+                }
+
+
+.slider-holder {
+    width: 922px;
+    height: 340px;
+    margin-left: 185px;
+    padding: 60px 70px;
+    overflow: hidden;
+    position: relative;
+    background: url(../imagenes/slider.png) no-repeat 0 0;
+    position: absolute;
+    top: 165px;
+    left: -44px;
+    z-index: 2;
+}
+
+.big-slider {
+    width: 912px;
+    height: 340px;
+    overflow: visible;
+    position: static;
+}
+
+    .big-slider ul.slides {
+        position: relative;
+        list-style: none;
+        list-style-position: outside;
+        overflow: visible;
+    }
+
+        .big-slider ul.slides li {
+            position: relative;
+            width: 922px;
+            height: 340px;
+            float: left;
+        }
+
+            .big-slider ul.slides li img {
+                width: 350px;
+                height: 313px;
+                margin-top: 26px;
+                margin-right: 24px;
+                margin-left: 10px;
+            }
+
+        .big-slider ul.slides .slide-cnt {
+            width: 490px;
+            float: left;
+            padding-top: 47px;
+        }
+
+            .big-slider ul.slides .slide-cnt h2 {
+                font-size: 44px;
+                color: #ff9031;
+                font-family: 'museo700',arial, helvetica, serif;
+                font-weight: normal;
+                line-height: 53px;
+                padding-bottom: 4px;
+            }
+
+            .big-slider ul.slides .slide-cnt p {
+                padding-bottom: 4px;
+            }
+
+a.red-btn {
+    margin-left: 25%;
+}
+
+.big-slider ul.slides .slide-cnt a.red-btn {
+    width: 154px;
+    height: 58px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 6px;
+    position: relative;
+    left: -5px;
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.5) 0px 1px 1px;
+    font-size: 18px;
+    display: block;
+    background: url(../imagenes/red-btn.png) no-repeat 0 0;
+}
+
+    .big-slider ul.slides .slide-cnt a.red-btn:hover {
+        text-decoration: none;
+        color: #f6c387;
+    }
+
+.alignleft {
+    float: left;
+    display: inline;
+}
+
+/* fin de header */
+
+
+
+.main {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* footer */
+
+footer {
+    background: url(../imagenes/footer.png) repeat-x 0 0;
+    margin-top: 18px;
+    height: 45px;
+    -zindex: 1;
+}
+
+    footer .footer-nav {
+        padding: 17px;
+        float: left;
+    }
+
+        footer .footer-nav ul {
+            list-style: none;
+            list-style-position: outside;
+            font-size: 11px;
+        }
+
+            footer .footer-nav ul li {
+                float: left;
+                border-right: 1px solid #cf8832;
+                line-height: 11px;
+                padding: 0 10px;
+            }
+
+                footer .footer-nav ul li a {
+                    color: #fbe0c0;
+                }
+
+                    footer .footer-nav ul li a:hover {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+                footer .footer-nav ul li.last {
+                    border-right: 0;
+                    padding-right: 0;
+                }
+
+    footer p.copy {
+        padding: 17px;
+        color: #fbe0c0;
+        font-size: 11px;
+        float: right;
+        line-height: 11px;
+    }

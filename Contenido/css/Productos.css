@@ -1,0 +1,316 @@
+
+
+header {
+    height: 180px;
+}
+
+
+.main {
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+
+
+#contenido_principal {
+    height: auto;
+    width: 55%;
+    margin-left: 15%;
+    float: left;
+}
+
+#contenedor_presupuesto {
+    width: 20%;
+    float: left;
+    margin-right: 10%;
+}
+
+
+ul.productos {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    ul.productos li {
+        background: #FBF6E6;
+        border: 2px dashed #d3d3d3;
+        padding: 5px;
+        width: 40%;
+        height: 300px;
+        text-align: center;
+        float: left;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    ul.productos h3 {
+        margin: 0;
+        padding: 0px 0px 5px 0px;
+        font-size: 14px;
+    }
+
+    ul.productos small {
+        display: block;
+    }
+
+    ul.productos form fieldset {
+        border: 0px;
+    }
+
+    ul.productos form label {
+        font-size: 12px;
+    }
+
+    ul.productos form input[type=text] {
+        width: 18px;
+        background: #FFF;
+        border: 1px solid #d3d3d3;
+    }
+
+
+
+#SpamSubto, h6 {
+    display: inline;
+}
+
+
+#subtotPre, h5 {
+    display: inline;
+}
+
+
+#presupuesto {
+    width: 90%;
+    border: 1px dashed #d3d3d3;
+    float: left;
+}
+
+    #presupuesto tr:nth-child(odd) {
+        background-color: #DDD;
+        color: #777;
+    }
+
+    #presupuesto tr:nth-child(even) {
+        background-color: #666;
+        color: #FFF;
+    }
+
+    #presupuesto th tr {
+        border: solid 1px;
+    }
+
+.form_envio_resumen {
+    float: left;
+    height: 70%;
+    width: 40%;
+    margin-left: 1%;
+}
+
+    .form_envio_resumen ul {
+        list-style: none;
+    }
+
+.contenedor_tabla_items {
+    float: left;
+    height: 70%;
+    width: 50%;
+    margin-left: 1%;
+    overflow-y: scroll;
+    border: solid 1px;
+}
+
+
+
+.formulario_modal {
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 85%;
+    width: 75%;
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #f2f2f2;
+    z-index: 50;
+}
+
+
+#subtotPre, #cantPerso {
+    display: block;
+    color: #777;
+    font: 13px Helvetica, Arial, sans-serif;
+    margin: 10px;
+}
+
+
+.cerrar_formulario_modal {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    float: right;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: url(../imagenes/close.png) no-repeat;
+}
+
+
+.bloqueo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+
+form input[type="text"], form input[type="email"] {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+    -moz-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+    -ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+    -o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+    box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0,0,0,0.08) inset;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border: 1px solid #c8c8c8;
+    color: #777;
+    font: 12px Helvetica, Arial, sans-serif;
+    margin: 10px;
+    padding: 10px 10px 10px 5px;
+    width: 60%;
+}
+
+
+    form input[type="text"]:focus, form input[type="email"]:focus {
+        -webkit-box-shadow: 0 0 2px #ed1c24 inset;
+        -moz-box-shadow: 0 0 2px #ed1c24 inset;
+        -ms-box-shadow: 0 0 2px #ed1c24 inset;
+        -o-box-shadow: 0 0 2px #ed1c24 inset;
+        box-shadow: 0 0 2px #ed1c24 inset;
+        background-color: #fff;
+        border: 1px solid #ed1c24;
+        outline: none;
+    }
+
+
+
+
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+}
+
+th {
+    text-align: left;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .table > tr > th,
+    .table > tr > td,
+    {
+        padding: 4px;
+        vertical-align: top;
+        border-top: 0.4px solid #ddd;
+    }
+
+    .table > tr > th {
+        vertical-align: bottom;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+.table {
+    background-color: #fff;
+}
+
+.table-striped > tr:nth-child(odd) > td,
+.table-striped > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+
+
+.exito {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid;
+    padding: 40px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    position: fixed;
+    width: 20%;
+    height: 10%;
+    margin-left: 40%;
+    margin-top: -25px;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('../imagenes/exito.png');
+}
+
+.contenido_formulario {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    height: 90%;
+    width: 97%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+
+.ImgProd {
+    height: 190px;
+    width: 250px;
+}
+
+
+
+
+.botonEnviarPedido {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+html, body {
+    height: auto;
+}
+
+footer, footer-push {
+    height: 100px;
+}
+
+footer {
+    height: 45px;
+    margin-top: 50px;
+}
